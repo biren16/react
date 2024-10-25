@@ -1,0 +1,52 @@
+2.) HOF 
+import React from "react";
+const HighOrder = ({productList}) => {
+	return(
+		<ul>
+			{productList.map((product)=>(
+				<li key={product.id}>
+					<div>{product.name}</div>
+					<img src={`${product.image}`} alt={product.name} />
+					<div>{product.price}</div>
+				</li>
+			))}
+		</ul>
+	);
+}
+
+export default HighOrder;
+ (APP.JS )
+const ProductList = [
+	{id : "1" ,
+	 price : "$200",
+	 name : "pencil",
+	 image : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fpencil%2F&psig=AOvVaw1lYDD5dSIh-56skqJG9Be_&ust=1726722290741000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCICklPncy4gDFQAAAAAdAAAAABAE"
+	},
+	{id : "2" ,
+		price : "$200",
+		name : "pen",
+		image : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fpencil%2F&psig=AOvVaw1lYDD5dSIh-56skqJG9Be_&ust=1726722290741000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCICklPncy4gDFQAAAAAdAAAAABAE"
+
+	   },
+	   {id : "3" ,
+		price : "$200",
+		name : "Eraser",
+		image : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fpencil%2F&psig=AOvVaw1lYDD5dSIh-56skqJG9Be_&ust=1726722290741000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCICklPncy4gDFQAAAAAdAAAAABAE"
+
+	   }
+];
+
+
+
+
+
+import React from 'react';
+
+const Firstd2c1 = () => {
+    return(
+        <div>
+            <h1>Hello, World!</h1>
+        </div>
+    );
+};
+export default Firstd2c1;
